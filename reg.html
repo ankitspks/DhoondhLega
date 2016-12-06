@@ -8,23 +8,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="first.css">
-<style>
-	li:hover
-	{
-		background-color: black;
-	}
-</style>
 </head>
 <body>
 
-<!-- Created fixed navbar -->
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="121" style="width: 100%;">
+<!-- Created Navigation bar -->
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-    	<img src="logo_1.jpg" style="width: 50px; height: 50px;" class="navbar-nav">
-      <a class="navbar-brand" href="#" style="color: white; font-size: 27px; margin-left: 7px;"><b>DhoondLega.com</a></b>
+    	<img src="logo_1.jpg" class="navbar-nav header_logo">
+      <a class="navbar-brand header_name" href="#"><b>DhoondLega.com</a></b>
     </div>	
-    <ul class="nav navbar-nav" style="font-size: 18px; text-align: center;">
+    <ul class="nav navbar-nav hdr">
       <li><a href="#">Home</a></li>
       <li><a href="#">Housing</a></li>
       <li><a href="#">Movies</a></li>
@@ -41,8 +35,7 @@
 <!-- End of Navigation bar -->
 
 <!-- Rotating Image div -->
-<div style="height: 60%; border: black solid 1px; width: 100%; margin-top: -20px;" >
-	<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel slide">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -51,29 +44,29 @@
     </ol>
     <div class="carousel-inner">
         <div class="item active">
-            <img src="http://orig08.deviantart.net/8845/f/2013/091/4/e/house_of_cards_by_kairogc-d603i45.jpg" style="width:100%; height: 100%; min-height: 300px;" class="img-responsive">
+            <img src="http://orig08.deviantart.net/8845/f/2013/091/4/e/house_of_cards_by_kairogc-d603i45.jpg"  class="img-responsive main_image">
             <div class="container">
                 <div class="carousel-caption" >
-                <h1 style="font-size: 72px; color: red;">We Provide <span style="color: yellow;">Housing</span> Details</h1>
-                <h3 style="color: cyan;">A place to find houses to Buy, Sell or Rent !!</h3>
+                <h1 class="titlee">We Provide <span class="sp">Housing</span> Details</h1>
+                <h3 class="subtile">A place to find houses to Buy, Sell or Rent !!</h3>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img src="https://wallpprs.media/1500x500/joker-fan-art-2_wallpprs.com_.jpg" class="img-responsive" style="width:100%; height: 100%; min-height: 300px;">
+            <img src="https://wallpprs.media/1500x500/joker-fan-art-2_wallpprs.com_.jpg" class="img-responsive main_image">
             <div class="container">
                 <div class="carousel-caption" >
-                <h1 style="font-size: 72px; color: red;">We Provide <span style="color: yellow;">Movie</span> Details</h1>
-                <h3 style="color: cyan;">All new/old Movie details and amazing free trailers !!</h3>
+                <h1 class="titlee">We Provide <span class="sp">Movie</span> Details</h1>
+                <h3 class="subtile">All new/old Movie details and amazing free trailers !!</h3>
                 </div>
             </div>
         </div>
         <div class="item">
-            <img src="http://jfv-law.com/wp-content/uploads/2015/09/jfv-urslider-images-31.jpg" class="img-responsive" style="width:100%; height: 100%; min-height: 300px;">
+            <img src="http://jfv-law.com/wp-content/uploads/2015/09/jfv-urslider-images-31.jpg" class="img-responsive main_image">
             <div class="container">
                 <div class="carousel-caption" >
-                <h1 style="font-size: 72px; color: red;">We Provide <span style="color: yellow;">Lawyer</span> Details</h1>
-                <h3 style="color: cyan;">Find A Lawyer for any kind of Law enforcement !!</h3>
+                <h1 class="titlee">We Provide <span class="sp">Lawyer</span> Details</h1>
+                <h3 class="subtile">Find A Lawyer for any kind of Law enforcement !!</h3>
                 </div>
             </div>
         </div>
@@ -86,8 +79,51 @@
   </a> 
 </div>
 <!-- /.carousel -->
-</div>
 
+<!-- Created functinality divs -->
+<div class="funcs">
+<!-- Functionality feature-1 -->
+		<div class="func_min" style="margin-left: 10%;">
+			<div class="icon_div">
+				<img src="file:///C:/Users/Ankit/Downloads/housing.png" class="logo1">
+				<img src="file:///C:/Users/Ankit/Downloads/housing1.png" class="logo2">
+			</div>
+			<div class="info_div">
+			<p class="divtag">Chose the House</p>
+			<p class="divpara">We provide  detailed information of <b>House</b> to share, rent and sell !</p>
+			</div>
+		</div>
+<!-- Functionality feature-2 -->
+		<div class="func_min">
+		<div class="icon_div">
+				<img src="file:///C:/Users/Ankit/Downloads/movies.png" class="logo1">
+				<img src="file:///C:/Users/Ankit/Downloads/movies1.png" class="logo2">
+			</div>
+			<div class="info_div">
+			<p class="divtag">Enjoy the Movies</p>
+			<p class="divpara">You can watch free movie trailers and list out new <b>Movie</b> releases !</p>
+			</div>
+		</div>
+<!-- Functionality feature-3 -->
+		<div class="func_min">
+		<div class="icon_div">
+			<img src="file:///C:/Users/Ankit/Downloads/law.png" class="logo1">
+			<img src="file:///C:/Users/Ankit/Downloads/law1.png" class="logo2">
+			</div>
+			<div class="info_div">
+			<p class="divtag">Get the Lawyer</p>
+			<p class="divpara" style="">Cannot get out of big problems of your life, contact a <b>Lawyer</b> now !</p>
+			</div>
+		</div>
+</div>
+<!-- End of functinality divs -->
+<br>
+
+<!-- Begin of footer -->
+<div class="futer">
+	<p class="futer_data">&#169 DhoondhLega.com</p>
+</div>
+<!-- End of footer -->
 
 <script src="home.js"></script>
 </body>
