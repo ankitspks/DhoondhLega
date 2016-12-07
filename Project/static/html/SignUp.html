@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign_up</title>
+</head>
+<body ng-app="login" ng-controller="loginctrl">
+	<div class="container" id="main">
+
+		<div class="row" style="margin-top:5% ">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xm-3">
+				
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xm-3">
+				<div id="button" ng-click="sign();">
+					<p  style="height:100%">Sign-Up</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xm-3">
+				<div id="button" ng-click="login();">
+					<p  style="height:100%">Login</p>
+					
+				</div>
+				
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xm-3">
+				
+			</div>
+			
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-0 col-xm-0">
+				<div></div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xm-12">
+				<div id="hi" ui-view></div>
+
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-0 col-xm-0">
+				<div></div>
+		
+			</div>
+			
+		</div>
+		
+	</div>
+
+
+
+
+
+<!-- ALL CDN HERE -->
+<link rel="stylesheet" type="text/css" href="SignUp.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+<script type="text/javascript" src="SignUp.js"></script>
+</body>
+</html>
