@@ -24,10 +24,20 @@ def popular_movies(request):
 	data = json.loads(response.read())
 	return render(request, "theater_movie.html" , {"data":data['results']})
 
-# this one is remaining
+
 def top_rated_movies(request):
-	# only for US
-	url = "https://api.themoviedb.org/3/discover/movie?api_key=8419dce727cd16afcc50b6e085faf444&certification_country=US&sort_by=vote_average.desc"
+	url = "https://api.themoviedb.org/3/discover/movie?api_key=8419dce727cd16afcc50b6e085faf444&sort_by=vote_average.desc"
 	response = urllib.urlopen(url)
 	data = json.loads(response.read())
 	return render(request, "theater_movie.html" , {"data":data['results']})
+
+def upcoming_movies(request):
+	current_dt = datetime.today().strftime("%Y-%m-%d")
+	next_dt = (datetime.now() + timedelta(days=40)).strftime("%Y-%m-%d")
+	url = "https://api.themoviedb.org/3/discover/movie?api_key=8419dce727cd16afcc50b6e085faf444&include_video=true&primary_release_date.gte="+str(current_dt)+"&primary_release_date.lte="+str(next_dt)
+	response = urllib.urlopen(url)
+	data = json.loads(response.read())
+	return render(request, "theater_movie.html" , {"data":data['results']})
+
+# For trailers
+#  https://api.themoviedb.org/3/movie/id/videos?api_key=8419dce727cd16afcc50b6e085faf444&language=en-US
