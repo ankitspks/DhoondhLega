@@ -1,4 +1,4 @@
-from .models import forms
+from .models import House
 from django import forms
 
 class HouseForm(forms.ModelForm):
