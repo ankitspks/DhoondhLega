@@ -4,6 +4,8 @@ var login=angular.module('login',['ui.router'])
 
 	$scope.sign=function(){
 		$location.path('/sign');
+
+		
 	}
 
 	$scope.login=function(){

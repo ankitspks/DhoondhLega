@@ -9,12 +9,12 @@
 
 
 				<span>Username:</span>
-				<input type="text" class="form-control" ng-model='username' placeholder="Enter Username" ng-required="true" ng-pattern="/^[a-zA-Z0-9]+$/" name="username"  style="width:195px;" >
+				<input type="text"  ng-model='username' placeholder="Enter Username" ng-required="true" ng-pattern="/^[a-zA-Z0-9]+$/" name="username"  style="width:195px;" >
 				<label ng-show="user.username.$invalid && user.username.$dirty">Enter Valid Username</label>
 				<br><br>
 
 				<span>Password:</span>
-				<input type="Password" class="form-control" ng-model='password' ng-minlength="8" ng-maxlength="12" placeholder="Enter Password" ng-required="true" ng-pattern="/^[A-Za-z0-9]+$/" name="password" style="width:200px;">
+				<input type="Password"  ng-model='password' ng-minlength="8" ng-maxlength="12" placeholder="Enter Password" ng-required="true" ng-pattern="/^[A-Za-z0-9]+$/" name="password" style="width:200px;">
 				
 				<label ng-show="user.password.$invalid && user.password.$dirty">Password Required</label>
 				<label ng-show="user.password.$error.pattern">No Special Character allow</label>

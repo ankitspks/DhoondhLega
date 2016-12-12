@@ -2,10 +2,9 @@
 #main{
 height: 100%;
 width: 100%;
-background-color: #90e082;
 }
-	#button{
-	background-color:#e08e82;
+
+#button{
 	opacity: .7;
 	border-bottom:none; 
 	box-shadow: 30px 30px 10px black;
@@ -21,11 +20,20 @@ background-color: #90e082;
 
 
 #hi{
-	border: solid red 2px;
 	box-shadow: 30px 30px 15px black;
+	background-color:#dee0e2;
+	border-radius: 15px;
 }
+
+
 
 
 #order-form span{
 	float: left;
+}
+
+#order-form input{
+	border:none;
+	border-bottom:solid 1px ;
+	background-color:#dee0e2; 
 }
