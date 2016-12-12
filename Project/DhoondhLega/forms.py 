@@ -1,0 +1,16 @@
+from .models import forms
+from django import forms
+
+class HouseForm(forms.ModelForm):
+	class Meta:
+		model = Post
+		fields = [
+			"customer",
+			"address",
+			"description",
+			"contact",
+			"house_type",
+			"price",
+			"photos"
+		]
+
