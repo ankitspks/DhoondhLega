@@ -1,4 +1,6 @@
-
+body{
+background-image: url('https://centurywestfunding.com/wp-content/uploads/2016/04/photodune-3052437-secured-padlock-l.jpg');no-repeat; background-size: 100%;
+}
 #main{
 height: 100%;
 width: 100%;
@@ -23,6 +25,7 @@ width: 100%;
 	box-shadow: 30px 30px 15px black;
 	background-color:#dee0e2;
 	border-radius: 15px;
+	opacity: 0.95
 }
 
 
@@ -30,6 +33,7 @@ width: 100%;
 
 #order-form span{
 	float: left;
+	font-size: 1.5em
 }
 
 #order-form input{
