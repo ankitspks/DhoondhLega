@@ -17,4 +17,3 @@ def house_post(request):
 	obj = House.objects.all()
 	data = serializers.serialize('json', obj)
 	return HttpResponse(data , content_type='json')
-
