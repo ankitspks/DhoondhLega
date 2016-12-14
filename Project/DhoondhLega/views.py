@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import urllib, json
 from datetime import datetime, timedelta
-from json2html import *
 from .forms import HouseForm
 
 
@@ -18,10 +17,8 @@ def house_post(request):
 		instance.save()
 		
 		return render(request, "post_house.html")
-
-
+		
 	else:
-
 		return render(request, "post_house.html",{"form":form})
 # def theater_movies(request):
 # 	current_dt = datetime.today().strftime("%Y-%m-%d")
