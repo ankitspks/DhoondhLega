@@ -2,15 +2,13 @@ var house=angular.module('house',['ui.router'])
 .controller('housectrl',function ($scope,$location) {
 	// alert("hello");
 
-	$scope.sign=function(){
-		$location.path('/post');
 
-		
-	}
+})
 
-	$scope.login=function(){
-		$location.path('/find');
-	}
+.controller('postctrl',function ($scope,$location) {
+	$scope.HouseType;
+
+
 })
 
 .config(function($stateProvider,$urlRouterProvider){
@@ -24,7 +22,7 @@ var house=angular.module('house',['ui.router'])
 	.state('post',{
 		url:"/post",
 		templateUrl:'post.html',
-		// controller:'homepage'
+		controller:'postctrl'
 	})
 
 	.state('find',{									//Second-page
