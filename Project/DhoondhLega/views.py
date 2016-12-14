@@ -1,28 +1,76 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-import urllib, json
-from datetime import datetime, timedelta
-from json2html import *
+import json
+from django.core import serializers
 from .forms import HouseForm
+from .models import House
 
 
 def index(request):
     return render(request, "index.html")
 
+
 def house_post(request):
-	form = HouseForm(request.POST or None , request.FILES or None )
-	# if Request.method == "POST":
-	# 	print Request.POST.get("Content")
-	if form.is_valid():
-		instance = form.save(commit=False)
-		instance.save()
+	if request.method == "GET":
+		pass
+	# if request.method == "POST":
+	obj = House.objects.all()
+	data = serializers.serialize('json', obj)
+	return HttpResponse(data , content_type='json')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def house_post(request):
+# 	form = HouseForm(request.POST or None , request.FILES or None )
+# 	# if Request.method == "POST":
+# 	# 	print Request.POST.get("Content")
+# 	if form.is_valid():
+# 		instance = form.save(commit=False)
+# 		instance.save()
 		
-		return render(request, "post_house.html")
+# 		return render(request, "post_house.html")
 
 
-	else:
+# 	else:
 
-		return render(request, "post_house.html",{"form":form})
+
+# 		return render(request, "post_house.html",{"form":form})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # def theater_movies(request):
 # 	current_dt = datetime.today().strftime("%Y-%m-%d")
 # 	previous_dt = (datetime.now() - timedelta(days=40)).strftime("%Y-%m-%d")
