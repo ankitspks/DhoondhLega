@@ -14,3 +14,12 @@ class HouseForm(forms.ModelForm):
 			"photos"
 		]
 
+class MoviesForm(forms.ModelForm):
+	class Meta:
+		model = Movies
+		fields = [
+			"name",
+			"gener",
+			"",
+		]
+

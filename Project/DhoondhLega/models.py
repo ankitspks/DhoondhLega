@@ -14,3 +14,25 @@ class House(models.Model):
 
  	def __str__(self):
  		return self.customer 
+
+
+
+class Movies(models.Model):
+	name = models.CharField(max_length=25)
+	MOVIE_TYPE = (
+		('action', 'ACTION'),
+		('animation', 'ANIMATION'),
+		('comedy', 'COMEDY'),
+		('documentary', 'DOCUMENTARY'),
+		('horror', 'HORROR'),
+		('musical', 'MUSICAL'),
+		('romance', 'ROMANCE'),
+		('Sci-Fi'),
+		('thriller', 'THRILLER'),
+	)
+	genre = models.CharField(max_length=30, choices=MOVIE_TYPE,
+			 default='action')
+	LANGUAGE_CHOICE = (
+		('hollywood', 'HOLLYWOOD'),
+		('bollywood', 'BOLLYWOOD'),
+	)
