@@ -1,0 +1,178 @@
+body
+{
+	background-color: #0a0606;
+}
+
+li:hover
+{
+	background-color: black;
+}
+
+.divtag
+{
+	font-size: 33px; 
+	font-family: Arial black; 
+	text-align: center; 
+	color: #145291;
+}
+
+.divpara
+{
+	color: #17202A; 
+	font-size: 20px; 
+	font-family: Comic Sans MS; 
+	text-align: center; 
+	margin-top: -2%;
+}
+
+.logo1
+{
+	height: 100%; 
+	width: 40%; 
+	float: left;
+}
+
+.logo2
+{
+	height: 100%; 
+	width: 40%; 
+	float: left; 
+	margin-left: 20%;
+}
+
+.func_min
+{
+	height: 100%; 
+	width: 25%; 
+	border: black solid 3px; 
+	margin-left: 2%;
+	float: left; 
+	background-color: lightblue;
+}
+
+.icon_div
+{
+	height: 40%; 
+	width: 80%; 
+	margin-left: 10%; 
+	margin-top: 10px;
+}
+
+.info_div
+{
+	margin-top: 7px; 
+	height: 50%; 
+	width: 90%; 
+	margin-left: 5%;
+}
+
+.futer
+{
+	border: black solid 1px; 
+	height: 50px; 
+	width: 100%; 
+	background-color: #1a1a1a; 
+	color: #566473; 
+	font-size: 14px; 
+	text-align: center; 
+	font-family: Open Sans,Helvetica,Arial,sans-serif; 
+	line-height: 24px;
+}
+
+.futer_data
+{
+	margin-top: 10px;
+}
+
+.header_logo
+{
+	width: 50px; 
+	height: 50px;
+}
+
+.header_name
+{
+	color: white; 
+	font-size: 27px; 
+	margin-left: 17px;
+}
+
+.main_image
+{
+	width:100%; 
+	height: 100%; 
+	min-height: 300px;
+}
+
+.titlee
+{
+	font-size: 63px; 
+	color: red;
+}
+
+.subtile
+{
+	color: cyan;
+}
+
+.sp
+{
+	color: yellow;
+}
+
+.hdr
+{
+	font-size: 18px;
+	text-align: center;
+}
+
+#myCarousel
+{
+	height: 60%; 
+	width: 100%; 
+	margin-top: -20px;
+}
+
+.funcs
+{
+	margin-top: 20px; 
+	height: 220px;
+}
+
+@media only screen and (min-width:500px){
+    .titlee { font-size: 40px; }
+    .divtag { font-size: 17px; }
+    .divpara { font-size: 12px;}
+    .subtile{ font-size: 18px; }
+}
+
+@media only screen and (min-width:650px){
+    .titlee { font-size: 45px; }
+    .divtag { font-size: 18px; }
+    .divpara { font-size: 13px;}
+    .subtile{ font-size: 20px; }
+}
+
+@media only screen and (min-width:900px){
+    .titlee { font-size: 50px; }
+    .divtag { font-size: 22px; }
+    .divpara { font-size: 15px; }
+}
+
+@media only screen and (min-width:1150px){
+    .titlee { font-size: 54px; }
+    .divtag { font-size: 26px; }
+    .divpara { font-size: 17px; }
+}
+
+@media only screen and (min-width:1350px){
+    .titlee { font-size: 57px; }
+    .divtag { font-size: 30px; }
+    .divpara { font-size: 20px; }
+}
+
+@media only screen and (min-width:1500px){
+    .titlee { font-size: 63px; }
+    .divtag { font-size: 33px; }
+    .divpara { font-size: 22px; }
+}

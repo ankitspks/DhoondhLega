@@ -1,0 +1,13 @@
+<html>
+<head>
+<link rel="stylesheet" href="/static/css/base.css">
+</head>
+
+<body>
+ <h1> Welcome to DhoondhLega.com </h1>
+ {% for i in data %}
+ <img src="https://image.tmdb.org/t/p/w500/{{i.poster_path}}">
+ {% endfor %}
+</body>
+
+</html>
