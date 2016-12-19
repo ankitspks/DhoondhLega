@@ -32,7 +32,10 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'DhoondhLega',
+<<<<<<< HEAD
     'corsheaders',
+=======
+>>>>>>> 09c2f93630f49c369de2be6fb66892298b3b587e
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
