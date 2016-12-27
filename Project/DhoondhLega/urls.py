@@ -4,7 +4,6 @@ from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-<<<<<<< HEAD
     url(r'^house/$', views.house, name='house'),
     url(r'^house/post/$', views.house_post, name='house_post'),
     url(r'^house/post.html/$', views.house_post_html, name='house_post_html'),
@@ -13,8 +12,6 @@ urlpatterns = [
     url(r'^templates/login.html/$', views.signIn, name='signIn'),
     url(r'^templates/sign.html/$', views.Register, name='register'),
     url(r'^SignUp.html/$', views.signUp, name='signUp'),
-=======
     url(r'^house/post/$', views.house_post, name='house_post'),
->>>>>>> 09c2f93630f49c369de2be6fb66892298b3b587e
 
 ]
