@@ -1,0 +1,33 @@
+<div class="row" style="margin-top:8%" ng-hide="frmdetail">		     	<!-- Form-row -->
+		<div class="col-lg-2 col-md-2 col-sm-2">
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8">
+			<div id="order-form">
+			<form name='user'>
+
+				
+
+
+				<span>Username:</span>
+				<input type="text"  ng-model='username' placeholder="Enter Username" ng-required="true" ng-pattern="/^[a-zA-Z0-9]+$/" name="username"  style="width:195px;" >
+				<label ng-show="user.username.$invalid && user.username.$dirty">Enter Valid Username</label>
+				<br><br>
+
+				<span>Password:</span>
+				<input type="Password"  ng-model='password' ng-minlength="8" ng-maxlength="12" placeholder="Enter Password" ng-required="true" ng-pattern="/^[A-Za-z0-9]+$/" name="password" style="width:200px;">
+				
+				<label ng-show="user.password.$invalid && user.password.$dirty">Password Required</label>
+				<label ng-show="user.password.$error.pattern">No Special Character allow</label>
+				<label ng-show="user.password.$error.maxlength">Must be less than 12 Characters</label>
+				<label ng-show="user.password.$error.minlength">Must be more than 8 Characters</label>
+				<br><br>
+
+				
+			</form>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-8 col-sm-2">
+		</div>
+
+		
+	</div>

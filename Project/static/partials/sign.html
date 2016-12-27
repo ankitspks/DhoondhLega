@@ -1,0 +1,58 @@
+	<div class="row" style="margin-top:8%" ng-hide="frmdetail">		     	<!-- Form-row -->
+		<div class="col-lg-2 col-md-2 col-sm-2">
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8">
+			<div id="order-form">
+			<form name='user'>
+
+				<span>Firstname:</span>
+				<input type="text"  ng-model='firstname' name="firstname" placeholder="Enter Firstname" style="width:200px; border-bottom: solid grey 1px;" ng-required="true" ng-pattern="/^[a-zA-Z]+$/">
+				<label ng-show="user.firstname.$invalid && user.firstname.$dirty">Enter Valid Firstname</label>
+				<br><br>
+
+
+				<span>Username:</span>
+				<input type="text"  ng-model='username' placeholder="Enter Username" ng-required="true" ng-pattern="/^[a-zA-Z0-9]+$/" name="username"  style="width:195px;" >
+				<label ng-show="user.username.$invalid && user.username.$dirty">Enter Valid Username</label>
+				<br><br>
+
+				<span>Password:</span>
+				<input type="Password"  ng-model='password' ng-minlength="8" ng-maxlength="12" placeholder="Enter Password" ng-required="true" ng-pattern="/^[A-Za-z0-9]+$/" name="password" style="width:200px;">
+				
+				<label ng-show="user.password.$invalid && user.password.$dirty">Password Required</label>
+				<label ng-show="user.password.$error.pattern">No Special Character allow</label>
+				<label ng-show="user.password.$error.maxlength">Must be less than 12 Characters</label>
+				<label ng-show="user.password.$error.minlength">Must be more than 8 Characters</label>
+				<br><br>
+
+				<span>Contact-num:</span>
+				<input type="Number"  placeholder="XXX-XXX-XXXX" ng-model='number' ng-maxlength="10" ng-required="true" ng-pattern="/^[0-9]+$/" name="number" style="width:170px;" >
+				<label ng-show="user.number.$error.maxlength">Number must be 10 Digit Only</label>
+				<label ng-show="user.number.$invalid && user.number.$dirty">Enter Valid Number</label>
+				<br><br>
+
+				<span>E-mail:</span>
+				<input type="text"  placeholder="example@mail.com" ng-model='mail' ng-required="true" ng-pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/" name="mail" style="width:235px;">
+				<label ng-show="user.mail.$error.pattern">Enter Valid E-mail</label>
+				<br><br>
+
+				<span>Address:</span>
+				<input type="text"  ng-model="address" placeholder="Enter Your Address" style="width:215px;"><br><br>
+
+				<span>Zip-code:</span>
+				<input type="text"  placeholder="XXX-XXX" ng-model='zip' ng-maxlength="5" ng-minlength="5" ng-pattern="/^[0-9]+$/" name="zip" style="width:210px;">
+				<label ng-show="user.zip.$error.maxlength">Zipcode must be 5 Digit</label>
+				<label ng-show="user.zip.$invalid && user.zip.$dirty">Enter Valid Zip-code</label>
+
+				<br>
+
+				<button id="sub" ng-click="reg()">Register</button><br><br><br><br><br><br>
+
+			</form>
+			</div>
+		</div>
+		<div class="col-lg-2 col-md-8 col-sm-2">
+		</div>
+
+		
+	</div>
