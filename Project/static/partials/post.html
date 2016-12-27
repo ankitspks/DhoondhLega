@@ -1,0 +1,71 @@
+<div class="container">
+
+		<div class="row">
+			<div class="col-lg-3 col-md-2 col-sm-2 col-xm-2">
+				
+				
+			</div>
+			
+
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xm-5">
+				<div id="form-1" ng-hide="form">
+					<span>House-Type:</span>
+						<select name="Rent" ng-model='HouseType' style="margin-left:10% ">
+ 								 <option value="" ></option>						
+ 								 <option value="1-BHK" >1-BHK</option>
+  							     <option value="2-BHK">2-BHK</option>
+ 								 <option value="3-BHK">3-BHK</option>
+						</select><br>
+
+					<span>Rent-Price:</span>	
+						<input type="text" ng-model='RentPrice' name="" style="margin-left:13.5% " placeholder="Enter Amount"><span>$</span><br>
+
+					<span>Owner-Name:</span>	
+						<input type="text" ng-model='OwnerName' name="" style="margin-left:7% " placeholder="Enter Your Name"><br>
+
+					<span>Details:</span>	
+						<input type="text" ng-model='Details' name="" style="margin-left:21% " placeholder="Enter House Details"><br>	<br>
+
+					<span>Address:</span>	
+						<textarea  rows="2" ng-model='Address' cols="31" name="comment" placeholder="Enter Address" style="margin-left:19% "></textarea><br>
+
+					<span>Contact-Num:</span>	
+						<input type="text" ng-model='ContactNum' name="" style="margin-left:7% " placeholder="Enter House Details"><br>	
+
+					
+					<button ng-click="add()">Add</button>
+				</div>
+
+
+
+				<div id="confirm" ng-hide="confirm">
+						<h1><u>Confirm-Details</u></h1>
+					<span>Name:</span>{{OwnerName}}<br>
+					<span>House-Type:</span>{{HouseType}}<br>
+					<span>Address:</span>{{Address}}<br>
+					<span>Home-Details:</span>{{Details}}<br>
+					<span>Rent-amount:</span>{{RentPrice}}$<br>
+					<span>Phone-Num:</span>{{ContactNum}}<br>
+
+					<button  ng-click="back()">Edit</button>
+					<button ng-click="submit()">Submit</button><br>
+				</div>
+
+				<div id='final' ng-hide="final">
+					<h1>Your House Posted Successfully.</h1>
+					<button  ng-click="newpost()">New-Post</button>
+				</div>
+				
+			</div>
+
+
+
+
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xm-2">
+				
+			</div>
+
+			
+			
+		</div>
+</div>
